@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Speech Recognition</title>
+  
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <link rel="manifest" href="/manifest.json">-->
+  
+   <link rel="stylesheet" href="{{ url_for('static',    filename='css/style.css') }}">
+  
+  <link rel="manifest" href="{{ url_for('static',    filename='css/manifest.css') }}">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <script src="https://use.fontawesome.com/f061fecdbc.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="text-box" contenteditable="true"></div>
+    <i class="fa fa-microphone"></i>
+    <select id="voiceSelect"></select>
+	
+  </div>
+  <audio class="sound" src="static/css/chime.mp3"></audio>
+		
+	
+  <script src="static/css/main.js" async></script>
+  
+<button name="forwardBtn" onclick="move_forward()">Reconnaitre</button><br>
+
+<button name="forwardBtn" onclick="move_forward()">Forward</button><br>
+
+ <input type="submit" value="Enregister texte">
+  	Merci de spécifier un fichier ou plusieurs<br>
+Charger un audio <input type="file" name="datafile" size="40">
+</body>
+</html>
